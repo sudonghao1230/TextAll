@@ -1,0 +1,33 @@
+git账号：
+sudonghao
+sudh123456
+
+git clone 项目地址     //得到这个项目
+git pull                     //用这个命令（要在.git下同级）
+git init                       //初始化一个git仓库
+git add 1.text            //告诉git，把文件添加到仓库
+git commit  -m '提交了文件'            //告诉git，把文件提交到仓库
+git status                  //仓库当前状态
+git reset --hard HEAD^      //回到上一个版本
+git reset --hard HEAD^^   //回到上上一个版本
+git reset --hard HEAD~100  //回到上100个版本
+git reset --hard 4a07d477     //回到指定版本号16ee0127a4d75cb5a8239e76fce6645f45808be7
+git reflog                           //查看命令历史
+git remote -v                    //查看git版本
+
+git branch            //查看分支
+git branch dev           //创建dev分支
+git switch dev       //切换到dev分支，括号里面有dev
+git merge dev   //把dev的分支合并到master(在master的状态)
+git branch -d dev       //删除dev分支
+
+git config --global alias.st status       //为status取了一个别名，输入git st 等于输入 git status 
+C盘>用户>Sudonghao>.gitconfig    //删除对应的别名记录保持即可
+git remote set-url origin http://xxxx.git 切换git地址
+
+
+3、基于release分支克隆出新的本地分支ssue66
+git checkout -b issue66
+4、将新建的本地分支issue66push到远程仓库
+git push origin issue66
+
